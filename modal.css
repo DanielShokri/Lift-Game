@@ -1,0 +1,59 @@
+dialog {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border: none;
+}
+
+dialog::backdrop {
+    background-image: linear-gradient(
+            45deg,
+            magenta,
+            rebeccapurple,
+            dodgerblue,
+            green
+    );
+    opacity: 0.75;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: blue;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#modalCloseButton{
+    padding: 10px;
+    background: red;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}

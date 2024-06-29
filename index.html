@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lift game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lift.css"/>
+    <link rel="stylesheet" href="modal.css"/>
+</head>
+<body>
+<div class="site-header">
+    <h1>Lift Game</h1>
+</div>
+<dialog>
+    <form>
+        <h3>Enter your desired floor number:</h3>
+        <div class="flex">
+            <label for="floorNumberInput">Floor:</label>
+            <input name='floorNumberInput' type="number" id="floorNumberInput" min="1" max="8" required/>
+            <button type="submit" id="modalSubmitButton">Submit</button>
+            <button id="modalCloseButton">Close</button>
+        </div>
+    </form>
+</dialog>
+<div class="liftContainer">
+    <div class="flex">
+        <span class="liftFloor" id="8">8</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" id="7">7</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" data-lift="1" id="6">6</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" id="5">5</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" id="4">4</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" id="3">3</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" id="2">2</span>
+        <div class="lift-1-container">
+            <img src="elevator.png" data-lift="1" class="liftPic-1"/>
+        </div>
+        <div class="lift-2-container">
+            <img src="elevator.png" data-lift="2" class="liftPic-2"/>
+        </div>
+    </div>
+    <div class="flex">
+        <span class="liftFloor" id="1">1</span>
+        <div class="lift-1-container visible">
+            <img src="elevator.png" data-lift="1" class="liftPic-1 visible"/>
+        </div>
+        <div class="lift-2-container visible">
+            <img src="elevator.png" data-lift="2" class="liftPic-2 visible"/>
+        </div>
+    </div>
+</div>
+
+<script src="./lift.js" type="module"></script>
+<script src="./modal.js" type="module"></script>
+</body>
+</html>
